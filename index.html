@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Backgrond Biasa</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1>Pilih Warna</h1>
+    <div class="warna">
+        <button value="blue">blue</button>
+        <button value="green">green</button>
+        <button value="red">red</button>
+    </div>
+
+    <div class="latar"></div>
+    <script>
+        const bg = {
+
+            button1: document.getElementsByTagName("button")[0],
+            button2: document.getElementsByTagName("button")[1],
+            button3: document.getElementsByTagName("button")[2],
+            latar: document.getElementsByClassName("latar")[0]
+
+        }
+
+        bg.button1.addEventListener("click", function() {
+            bg.latar.style.backgroundColor = "blue";
+        });
+        bg.button2.addEventListener("click", function() {
+            bg.latar.style.backgroundColor = "green";
+        });
+        bg.button3.addEventListener("click", function() {
+            bg.latar.style.backgroundColor = "red";
+        });
+    </script>
+</body>
+
+</html>
+
+</html>
